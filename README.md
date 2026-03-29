@@ -1,7 +1,9 @@
-# Alzheimer-claasification-task
- all the code has successfully run in the kaggle platform.
+## Title
+Enhancing Alzheimer’s Disease Diagnosis through Automated Hyperparameter Optimization: A Bayesian Approach for EfficientNet Models
+
+all the code has successfully run in the kaggle platform.
  
-Since the maximum running time allowed on the Kaggle platform is 12 hours, 
+ Since the maximum running time allowed on the Kaggle platform is 12 hours, 
  when attempting to reproduce, it is necessary to save the log of each run result and import it into a new notebook to continue running from the last breakpoint.
 
 ## Code Guide
@@ -26,11 +28,11 @@ Required input:
   - The augmented dataset  
   - Existing observational data (if re-running on Kaggle is required).
 
-* 📄 **`champion-test.ipynb`**  
-  This notebook tests the best models ("Champions") found by each search strategy on the unseen test set. It loads the optimal hyperparameters, trains the final models, and outputs the detailed performance metrics (e.g., $98.69\%$ test accuracy for Standard BO vs. $98.80\%$ for Marginalized BO). It also generates the raw `y_prob_scores` and `y_true_label` arrays.
+* 📄 **`champion-analysis.ipynb`**  
+  This notebook tests the best models ("Champions") found by each search strategy on the unseen test set. It loads the optimal hyperparameters, trains the final models, and outputs the detailed performance metrics (e.g., $98.69\%$ test accuracy for Standard BO vs. $98.80\%$ for Marginalized BO).
 
-* 📄 **`plot-code.ipynb`**  
-  **[Paper Figures]** The dedicated visualization script used to generate the high-quality, publication-ready figures found in the paper. This includes the code for the $2 \times 2$ Confusion Matrices and the $1 \times 3$ Comprehensive ROC Curves with zoomed-in insets.
+* 📄 **`champion-analysis-supplements.ipynb`**  
+  This notebook supplements the code `champion-analysis.ipynb` by adding a set of standard BO hyperparameters that need to be trained and tested, then compared against existing stored results.
 
 * 📄 **`plot-abo-slice1d.ipynb`**  
   Generates 1D slice visualizations of the Bayesian Optimization landscape and acquisition functions, providing mathematical insights into the optimization space explored by the models.
