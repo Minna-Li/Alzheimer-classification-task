@@ -5,6 +5,11 @@ all the code has successfully run in the kaggle platform.
  
  Since the maximum running time allowed on the Kaggle platform is 12 hours, 
  when attempting to reproduce, it is necessary to save the log of each run result and import it into a new notebook to continue running from the last breakpoint.
+## Dataset
+The augmented and balanced Alzheimer's MRI dataset used in this project is publicly available via Mendeley Data to ensure reproducibility.
+
+You can download the complete dataset here: 
+[li, min (2026), “Augmented Alzheimer MRI 4-Classes Dataset ”, Mendeley Data, V1, doi: 10.17632/ky2d3tmgyh.1](https://doi.org/10.17632/ky2d3tmgyh.1)
 
 ## Code Guide
 To facilitate easy reproduction and code review, the pipeline is divided into distinct Jupyter Notebooks. Readers can navigate directly to the specific stage of the methodology they wish to examine:
